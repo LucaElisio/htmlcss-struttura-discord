@@ -4,3 +4,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+header{
+    padding: 10px 50px;
+    /* debug */
+    background-color: aqua;
+}
+
+.menu{
+    width: 50%;
+    margin: 0 auto;
+    /* debug */
+    background-color: bisque;
+    display: flex;
+}
+
+.menu div{
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.logo{
+    width: 25%;
+}
+
+.login{
+    width: 25%;
+    text-align: right;
+}
+
+.link{
+    width: 50%;
+    text-align: center;
+}
