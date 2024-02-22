@@ -12,13 +12,9 @@
     margin: 0 auto;
 }
 
-.content {
-    margin: 0 auto;
-}
-
-section{
-    padding: 30px;
+section, header, footer{
     width: 100%;
+    padding: 30px;
 }
 
 /* HEADER */
@@ -84,7 +80,6 @@ header{
 }
 
 .main{
-    width: 50%;
     display: flex;
 
     /* debug */
@@ -115,4 +110,24 @@ header{
     /* debug */
     height: 500px;
     background-color: tomato;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(29, 35, 35);
+}
+
+.top-bottom-s {
+    display: flex;
+    height: 200px;
+
+}
+
+.left-top-bottom-s{
+    flex-grow: 2;
+    background-color: beige;
+}
+.right-top-bottom-s{
+    background-color: rgb(28, 141, 141);
+    flex-grow: 1;
 }
