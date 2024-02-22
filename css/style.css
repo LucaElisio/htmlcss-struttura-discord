@@ -62,7 +62,7 @@ header{
 }
 
 /* only top-s content */
-.top{
+.top-content{
     width: 40%;
     margin: 0 auto;
 
@@ -72,10 +72,13 @@ header{
 }
 
 /* Main Section */
+
+/* Sezioni dispari */
 .odd{
     background-color: lemonchiffon;
 }
 
+/* Sezioni pari */
 .even{
     background-color: grey;
 }
@@ -105,4 +108,11 @@ header{
 
 .reverse{
     flex-direction: row-reverse;
+}
+
+/* only bottom-s content */
+.bottom-content{
+    /* debug */
+    height: 500px;
+    background-color: tomato;
 }
