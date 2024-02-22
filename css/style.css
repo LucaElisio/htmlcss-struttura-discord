@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 
-section, header, footer{
+section, footer > div{
     width: 100%;
     padding: 30px;
 }
@@ -117,17 +117,31 @@ footer{
     background-color: rgb(29, 35, 35);
 }
 
+/* Top Section of the footer */
 .top-bottom-s {
     display: flex;
     height: 200px;
-
 }
 
-.left-top-bottom-s{
+.left-top-bottom{
     flex-grow: 2;
     background-color: beige;
 }
-.right-top-bottom-s{
+.right-top-bottom{
     background-color: rgb(28, 141, 141);
     flex-grow: 1;
+}
+
+/* Bottom Section of the footer */
+.bottom-bottom{
+    background-color: aqua;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.bottom-logo{
+    background-color: rgb(214, 150, 150);
 }
