@@ -5,19 +5,35 @@
     box-sizing: border-box;
 }
 
+
+/* COMMON */
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+section{
+    padding: 30px;
+    width: 100%;
+}
+
 /* HEADER */
 header{
     padding: 10px 50px;
+
     /* debug */
     background-color: aqua;
 }
 
 .menu{
-    width: 50%;
-    margin: 0 auto;
+    display: flex;
+
     /* debug */
     background-color: bisque;
-    display: flex;
 }
 
 .menu div{
@@ -37,4 +53,56 @@ header{
 .link{
     width: 50%;
     text-align: center;
+}
+
+/* MAIN */
+/* Top Section */
+.top-s{
+    background-color: blue;
+}
+
+/* only top-s content */
+.top{
+    width: 40%;
+    margin: 0 auto;
+
+    /* debug */
+    background-color: purple;
+    height: 200px;
+}
+
+/* Main Section */
+.odd{
+    background-color: lemonchiffon;
+}
+
+.even{
+    background-color: grey;
+}
+
+.main{
+    width: 50%;
+    display: flex;
+
+    /* debug */
+    background-color: red;
+    height: 250px;
+}
+
+.right-content{
+    width: 60%;
+
+    /* debug */
+    background-color: yellow;
+}
+
+.left-content{
+    width: 40%;
+    
+    /* debug */
+    background-color: green;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
