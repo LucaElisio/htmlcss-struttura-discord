@@ -10,30 +10,54 @@
 .container{
     width: 50%;
     margin: 0 auto;
+    border: 1px dashed black;
+    /* Per i monitor landscape si usa max-width altrimenti sarà tutto dilatato */
+    max-width: 1000px;
 }
 
-section, footer{
+section{
     width: 100%;
-    padding: 30px;
+    padding: 10px 0px;
+}
+
+ul{
+    list-style-type: none;
+
 }
 
 /* HEADER */
 header{
-    padding: 10px 50px;
+    display: flex;
+    height: 70px;
+    /* Per centrare in verticale, nell'header che spesso hanno un'altezza fissa, si usa line-height */
+    line-height: 70px;
+    
+
 
     /* debug */
+    min-height: 50px;
     background-color: aqua;
 }
 
 .menu{
     display: flex;
+    align-items: center;
+    
 
     /* debug */
     background-color: bisque;
 }
 
+.link ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .menu div{
-    padding: 5px;
+    /* padding: 5px; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .logo{
@@ -46,8 +70,7 @@ header{
 }
 
 .link{
-    width: 50%;
-    text-align: center;
+    flex-grow: 1;
 }
 
 /* MAIN */
@@ -60,6 +83,8 @@ header{
 .top-content{
     width: 40%;
     margin: 0 auto;
+    border: 1px dashed black;
+
 
     /* debug */
     background-color: purple;
@@ -78,9 +103,9 @@ header{
 
 .main{
     display: flex;
+    border: 1px dashed black;
 
     /* debug */
-    background-color: red;
     height: 250px;
 }
 
@@ -112,39 +137,52 @@ header{
 /* FOOTER */
 footer{
     background-color: rgb(29, 35, 35);
+    width: 100%;
+
+
 }
 
 /* Top Section of the footer */
-.top-bottom-s {
+
+
+.top-bottom-c{
     display: flex;
     height: 200px;
 }
 
-.left-top-bottom{
-    flex-grow: 2;
-    background-color: beige;
+.col-30{
+    background-color: red;
+    width: 30%;
+
 }
-.right-top-bottom{
-    background-color: rgb(28, 141, 141);
-    flex-grow: 1;
+
+.col-70{
+    background-color: yellowgreen;
+    width: 70%;
+    display: flex;
+}
+
+.col-25{
+    background-color: blueviolet;
+    width: 25%;
+    border: 1px dashed black;
 }
 
 /* Bottom Section of the footer */
+.bottom-bottom-s{
+    padding: 10px 0px;
+}
+
 .bottom-bottom{
     background-color: aqua;
     height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    margin-top: 10px;
+
+    
 }
 
 .bottom-logo{
     background-color: rgb(214, 150, 150);
-}
-
-/* debug */
-div{
-    border: 1px dashed black;
 }
